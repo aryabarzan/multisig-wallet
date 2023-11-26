@@ -275,8 +275,9 @@ pub fn contract_receive_execute_transfer_request<S: HasStateApi>(
             let target_account = matching_request.target_account;
             let transfer_amount = matching_request.transfer_amount;
 
-            host.invoke_transfer(&target_account, transfer_amount)?;
             host.state_mut().requests.remove(&request_id);
+            host.invoke_transfer(&target_account, transfer_amount)?;
+
             Ok(())
         }
     }
