@@ -27,6 +27,7 @@ The main functions is listed bellow:
 ## How to compile and test
 
 `$ cargo  build`
+
 `$ cargo  test`
 
 ## How to deploy
