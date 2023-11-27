@@ -15,6 +15,7 @@ use concordium_rust_sdk::{
     v2,
 };
 use deployer::{DeployResult, Deployer, InitResult};
+use std::collections::BTreeSet;
 use std::{
     io::Cursor,
     path::{Path, PathBuf},
@@ -103,9 +104,13 @@ async fn main() -> Result<(), Error> {
         .context("Failed to initialize the contract.")?; // Example
 
     // This is how you can use a type from your smart contract.
-    use multisig_wallet::MyInputType; // Example
-
-    let input_parameter: MyInputType = false; // Example
+    use multisig_wallet::InitParams; // Example
+    let owners = BTreeSet::new();
+    // Example accounts
+    // owners.insert(account1);
+    // owners.insert(account2);
+    // owners.insert(account3);
+    let input_parameter: InitParams = InitParams { owners }; // Example
 
     // Create a successful transaction.
 
