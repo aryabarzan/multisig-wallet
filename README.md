@@ -3,7 +3,7 @@
 
 A smart contract that requires 3 different accounts’ signatures to authorize some CCD (the local coin of Concordium) transfers on [Concordium](https://www.concordium.com/) blockchain. This contract is written in Rust.
 
-##About Concordium
+## About Concordium
 > [Concordium](https://www.concordium.com/) is a science-backed blockchain that emphasizes decentralized identity. It stands out as the only Layer 1 (L1) blockchain offering a built-in, self-sovereign identity feature. This means that each user's real-world identity is authenticated, but their privacy is still maintained. The design of the Concordium blockchain is aimed at being fast, secure, and cost-effective.
 
 ## Documentation
